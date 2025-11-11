@@ -234,7 +234,7 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
 }
 
 .section-title {
@@ -260,6 +260,7 @@ body {
     color: #64748b;
     margin-bottom: 3rem;
     line-height: 1.8;
+    white-space: pre-line;
 }
 
 .skills-grid {

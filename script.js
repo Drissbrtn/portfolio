@@ -11,18 +11,8 @@ const projectsData = [
         github: "https://github.com/Drissbrtn/Script-API-Vigicrue/blob/main/script.py",
         demo: "Portfolio_API_V2.pdf"
     },
-    {
-        id: 2,
-        title: "Générateur de données CSV fictives intelligent",
-        description: "Création d'un générateur de données fictives et aléatoires cohérentes, idéal pour s'entraîner sur des projets DATA en condition réelle. <a href='https://claude.ai/public/artifacts/5c5cd93c-e664-478f-ae39-d9cb574a8acf' target='_blank'>Lien de la version intelligente/IA ici</a>",
-        image: "assets/images/Generateur_csv2_reoptimized.jpeg",
-        categories: ["ia-data"],
-        tools: ["python"],
-        tags: ["IA", "API", "Python", "Data"],
-        github: "https://github.com/Drissbrtn/drissbrtn.github2.io",
-        demo: "https://drissbrtn.github.io/drissbrtn.github2.io/"
-    },
-    {
+
+   {
         id: 3,
         title: "Convertisseur de DWG en Geodatabase",
         description: "Conception et développement d'un outil qui permet de convertir automatiquement un ou plusieurs fichier DWG (Autocad) en Geodatabase sur Arcgis",
@@ -33,6 +23,19 @@ const projectsData = [
         github: "https://github.com/Drissbrtn/Script_outil_DWG_convertisseur/blob/main/script_DWG.py",
         demo: "DWG_Version_Portfolio.pdf"
     },
+
+    {
+        id: 2,
+        title: "Générateur de données CSV fictives intelligent",
+        description: "Création d'un générateur de données fictives et aléatoires cohérentes, idéal pour s'entraîner sur des projets DATA en condition réelle. <a href='https://claude.ai/public/artifacts/5c5cd93c-e664-478f-ae39-d9cb574a8acf' target='_blank'>Lien de la version intelligente/IA ici</a>",
+        image: "assets/images/Generateur_csv2_reoptimized.jpeg",
+        categories: ["data"],
+        tools: ["python"],
+        tags: ["IA", "API", "Python", "Data"],
+        github: "https://github.com/Drissbrtn/drissbrtn.github2.io",
+        demo: "https://drissbrtn.github.io/drissbrtn.github2.io/"
+    },
+ 
     {
         id: 4,
         title: "Site d'Analyse de donnée sur le mix énergétique",
