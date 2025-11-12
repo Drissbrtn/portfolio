@@ -21,7 +21,7 @@ const projectsData = [
         tools: ["python"],
         tags: ["Python", "Data", "Automatisation", "Outil"],
         github: "https://github.com/Drissbrtn/Script_outil_DWG_convertisseur/blob/main/script_DWG.py",
-        demo: "DWG_Version_Portfolio.pdf"
+        demo: "P_DWG.pdf"
     },
 
     {
