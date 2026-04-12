@@ -1,7 +1,19 @@
 // Sample projects data
 const projectsData = [
+{
+    id: 1,
+    title: "Backlog agile (User stories) aATP — Migration SAP S/4HANA (Royal Canin)",
+    description: `Cas projet Business Analyst : spécification du moteur aATP dans la migration Navision → SAP S/4HANA chez Royal Canin (Mars Petcare). 
+Backlog méthodologique : 1 Epic, 9 US INVEST, critères Gherkin, schémas de process.`,
+    image: "assets/images/projet_BA.png",
+    categories: ["analyse", "data-viz"],
+    tools: ["notion"],
+    tags: ["Business Analyst", "Product Owner", "User story", "Agile", "SAP", "Backlog"],
+    github: null,
+    demo: "https://drissberton-ba.notion.site/Backlog-aATP-Migration-Navision-SAP-S-4HANA-340f29eddef380288663ce9664f39518?source=copy_link"
+},
     {
-        id: 1,
+        id: 2,
         title: "Système d'alerte en temps réel pour la gestion des risques opérationnels",
         description: "Création d'un script Python automatisé pour NGE, qui intègre en temps réel les données de l'API Vigicrue sur une carte ArcGIS Online afin de surveiller les risques de crue sur les chantiers.",
         image: "assets/images/APINGE5.png",
@@ -25,7 +37,7 @@ const projectsData = [
     },
 
     {
-        id: 2,
+        id: 4,
         title: "Générateur de données CSV fictives intelligent",
         description: "Création d'un générateur de données fictives et aléatoires cohérentes, idéal pour s'entraîner sur des projets DATA en condition réelle. <a href='https://claude.ai/public/artifacts/5c5cd93c-e664-478f-ae39-d9cb574a8acf' target='_blank'>Lien de la version intelligente/IA ici</a>",
         image: "assets/images/Generateur_csv2_reoptimized.jpeg",
@@ -37,7 +49,7 @@ const projectsData = [
     },
  
     {
-        id: 4,
+        id: 5,
         title: "Site d'Analyse de donnée sur le mix énergétique",
         description: "Projet de data-analyse réalisé en Licence 2 sur le thème de l'énergie. L'objectif était de: analyser des données, créer des visualisations, et développer un site web pour présenter et vulgariser les résultats de l'analyse sur un thème donné",
         image: "assets/images/ampoule.jpg",
@@ -48,7 +60,7 @@ const projectsData = [
         demo: "https://energies-driss12.nicepage.io/"
     },
     {
-        id: 5,
+        id: 6,
         title: "Analyse multicritère quantitative du photovoltaïque au sol en PACA",
         description: "Analyse multicritère des données techniques et réglementaires pour identifier les logiques d'implantation du photovoltaïque au sol en région PACA.",
         image: "assets/images/photo.jpeg",
@@ -59,7 +71,7 @@ const projectsData = [
         demo: "memoire_Berton_Driss.pdf"
     },
     {
-        id: 6,
+        id: 7,
         title: "Résumé de certains de mes travaux d'analyse de données statistiques en licence",
         description: "Il s'agit de certains de mes projets réalisés seul ou en groupe durant mes années de licence, sur des projets d'analyse de données majoritairement statistiques (tout type de données).",
         image: "assets/images/projet_licence.png",
@@ -127,7 +139,7 @@ function createProjectCard(project) {
         }
     }
 
-    // 2. Génère le bouton "Démo" SEULEMENT SI project.demo existe
+  // 2. Génère le bouton "Démo"
     if (project.demo) {
         if (project.demo.includes('.pdf')) {
             // Cas PDF
@@ -136,16 +148,22 @@ function createProjectCard(project) {
                     <i class="fas fa-file-pdf"></i> Voir PDF
                 </a>
             `;
+        } else if (project.demo.includes('notion.site')) {
+            // Cas spécifique pour Notion (Projet 1 par exemple)
+            demoLinkHtml = `
+                <a href="${project.demo}" class="project-link demo notion" target="_blank">
+                    <i class="fas fa-book"></i> Voir Notion
+                </a>
+            `;
         } else {
-            // Cas Démo Live
+            // Cas Démo Live par défaut
             demoLinkHtml = `
                 <a href="${project.demo}" class="project-link demo" target="_blank">
                     <i class="fas fa-external-link-alt"></i> Démo live
                 </a>
             `;
         }
-    }
-    
+    }    
     // --- FIN DE LA NOUVELLE LOGIQUE ---
     
     // On assemble la carte
