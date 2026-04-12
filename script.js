@@ -2,7 +2,7 @@
 const projectsData = [
 {
     id: 1,
-    title: "Backlog agile (User stories) aATP — Migration SAP S/4HANA (Royal Canin)",
+    title: "Backlog agile (User stories) aATP, (Advanced Available-to-Promise)",
     description: `Cas projet Business Analyst : spécification du moteur aATP dans la migration Navision → SAP S/4HANA chez Royal Canin (Mars Petcare). 
 Backlog méthodologique : 1 Epic, 9 US INVEST, critères Gherkin, schémas de process.`,
     image: "assets/images/projet_BA.png",
